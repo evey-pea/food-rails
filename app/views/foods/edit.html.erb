@@ -1,11 +1,3 @@
 <form action="/foods/<%= @food.id %>" method="POST">
-    <input type="hidden" value="<%= form_authenticity_token %>" name="authenticity_token" />
-
-    <input type="hidden" name="_method" value="put" />
-
-    <label for="name">Dish Name:</label><input value="<%= @food.name %>" type="text" name="name" />
-    <br>
-    <label for="calories">Calories:</label><input value="<%= @food.calories %>" type="number" name="calories" />
-    <br>
-    <button type="submit">Submit</button>
+    <%= render "shared/food_form", name_value:@food.name, calories_value:@food.calories %>
 </form>

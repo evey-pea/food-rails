@@ -1,8 +1,8 @@
 <h1>Dish</h1>
 <table>
     <%= render "shared/food_headrow"%>
-    <% puts id = @food.id %>
-    <% puts name = @food.name %>
-    <% puts calories = @food.calories %>
+    <% id = @food.id %>
+    <% name = @food.name %>
+    <% calories = @food.calories %>
     <%= render "shared/food_row", id:id, name:name, calories:calories %>
 </table>

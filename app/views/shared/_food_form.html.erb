@@ -1,0 +1,9 @@
+<input type="hidden" value="<%= form_authenticity_token %>" name="authenticity_token" />
+
+    <input type="hidden" name="_method" value="put" />
+
+    <label for="name">Dish Name:</label><input type="text" name="name" value="<%= defined?(name_value)? name_value : "Dish name" %>" />
+    <br>
+    <label for="calories">Calories:</label><input type="number" name="calories" value="<%= defined?(calories_value)? calories_value : 0 %>" />
+    <br>
+    <button type="submit">Submit</button>

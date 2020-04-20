@@ -1,9 +1,3 @@
 <form action="<%= food_create_path %>" method="POST">
-    <input type="hidden" value="<%= form_authenticity_token %>" name="authenticity_token" />
-
-    <label for="name">Dish Name:</label><input placeholder="Dish" type="text" name="name" />
-    <br>
-    <label for="calories">Calories:</label><input type="number" name="calories" />
-    <br>
-    <button type="submit">Submit</button>
+    <%= render "shared/food_form" %>
 </form>
