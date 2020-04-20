@@ -1,0 +1,17 @@
+<tr>
+    <td class="number">
+        <%= id %>
+    </td>
+    <td>
+        <%= name %>
+    </td>
+    <td class="number">
+        <%= calories %>
+    </td>
+    <td>
+        <button><%= link_to 'Edit', food_edit_path(id) %></button>
+    
+    <td>
+        <button><%= link_to 'X', food_destroy_path(id), method: :delete %></button>
+    </td>
+</tr>

@@ -1,0 +1,15 @@
+<h1>Food List</h1>
+<button>
+    <%= link_to 'Add Dish', food_new_path %>
+</button>
+
+
+<table>
+    <%= render "shared/food_headrow"%>
+    <% @foods.each do |food| %>
+        <% puts id = food.id %>
+        <% puts name = food.name %>
+        <% puts calories = food.calories %>
+        <%= render "shared/food_row", id:id, name:name, calories:calories %>
+    <% end %>
+</table>
